@@ -10,6 +10,7 @@ class DataIngestionConfig:
     unzip_dir: Path
 
 
+
 @dataclass(frozen=True)
 class PrepareBaseModelConfig:
     root_dir: Path
@@ -23,6 +24,7 @@ class PrepareBaseModelConfig:
 
 
 
+
 @dataclass(frozen=True)
 class TrainingConfig:
     root_dir: Path
@@ -33,6 +35,7 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+
 
 
 @dataclass(frozen=True)
